@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 
 function Login() {
+    const navigate=useNavigate();
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -49,13 +51,15 @@ function Login() {
         
     }).then((data)=>{
         return data.json();
+        
     }).then((data)=>{
         console.log(data);
-        
+
         
     }).catch((err)=>{
         alert('no user found')
     })
+    navigate("/exam");
   
     // Add your login logic here (e.g., API calls)
   };
