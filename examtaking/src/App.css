@@ -40,3 +40,119 @@
 .read-the-docs {
   color: #888;
 }
+.quiz-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.subjects button {
+  margin-right: 0.5rem;
+}
+
+.subjects .active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.question-section {
+  flex: 2;
+  padding: 1rem;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.actions button {
+  margin-right: 0.5rem;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border-left: 1px solid #ddd;
+}
+
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.question-status {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+
+.question-status.attempted {
+  background-color: #28a745;
+}
+
+.question-status.not-attempted {
+  background-color: #dc3545;
+}
+
+.question-status.to-review {
+  background-color: #ffc107;
+}
+
+.question-status.not-viewed {
+  background-color: #6c757d;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar li span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.sidebar li .attempted {
+  background-color: #28a745;
+}
+
+.sidebar li .not-attempted {
+  background-color: #dc3545;
+}
+
+.sidebar li .to-review {
+  background-color: #ffc107;
+}
+
+.sidebar li .not-viewed {
+  background-color: #6c757d;
+}
