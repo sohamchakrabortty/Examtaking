@@ -13,4 +13,4 @@ app.use('/auth',Authentication)
 app.use('/getexam',examEssencials);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+})//fciomgiomiofko
